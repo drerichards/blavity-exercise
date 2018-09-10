@@ -1,0 +1,38 @@
+nav.card {
+    background-color: rgb(119, 15, 15);
+    padding-right: 1em;
+    margin: 0;
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        button {
+            display: flex !important;
+            align-items: center;
+            flex-direction: row-reverse;
+
+            i {
+                height: 35px;
+                line-height: 35px;
+            }
+        }
+
+        ul li {
+            line-height: 0;
+
+            .collapsible-header {
+                background-color: rgba(71, 93, 30, 0.741);
+                margin-top: 0.5em;
+                font-weight: 100;
+                line-height: 20px;
+            }
+
+            .collapsible-body .card .card-content p {
+                line-height: initial;
+                color: #000;
+            }
+        }
+    }
+}

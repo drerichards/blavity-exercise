@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:300, 400, 500');
+$font-stack: 'Assistant',
+sans-serif;
+
+.App {
+    margin: 0 auto;
+
+    @media screen and (min-width: 650px) {
+        width: 80vw;
+    }
+}
+
+body {
+    font-family: $font-stack;
+}

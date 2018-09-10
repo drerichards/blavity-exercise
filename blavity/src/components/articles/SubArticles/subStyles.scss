@@ -1,0 +1,94 @@
+.subSection {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+    overflow-y: auto;
+    margin: 2em 0;
+    justify-content: center;
+
+    .subMain {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        flex-grow: 3;
+        overflow-y: auto;
+        padding: 1em 0;
+        justify-content: center;
+        max-width: 75em;
+
+        @media screen and (min-width: 1190px) {
+            width: 40%;
+        }
+
+        .card {
+            width: 45%;
+            margin: 0 0.5em 3em;
+
+            .card-image img {
+                height: 14em;
+            }
+
+            .card-content {
+                background-color: #f7f5f0;
+                border-top: 4px solid rgba(152, 20, 20, 0.85);
+                padding: 20px;
+
+                .card-title {
+                    display: flex;
+                    font-weight: 100;
+                    height: 4.2em;
+                    font-size: 1.1em;
+                    line-height: 18px;
+                    overflow: hidden;
+                }
+            }
+
+            .card-reveal {
+                span {
+                    display: flex;
+                    border-bottom: 0.5px rgba(0, 0, 0, 0.691) solid;
+                    font-size: 18px;
+                }
+
+                h6 {
+                    font-size: 0.75em;
+                }
+            }
+
+            .card-action {
+                padding: 0 24px;
+                height: 3em;
+                background-color: transparent;
+                transition: background-color .3s;
+                display: flex;
+                justify-content: space-between;
+
+                .card-action:hover {
+                    background-color: #d2d2d2;
+                }
+            }
+
+            a:hover {
+                background-color: #f3f3f3;
+            }
+
+            a {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                text-transform: capitalize;
+            }
+        }
+
+        .topRow,
+        .bottomRow {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .bottomRow .card {
+            margin-bottom: 0;
+        }
+    }
+}
