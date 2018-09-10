@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {Collapsible, CollapsibleItem, Card, CardTitle} from 'react-materialize'
 
 const renderCollapse = articles => {
+    //condition set to sub an image fro the cloud of db image not avail
     return articles.map((article, i) => {
         return <CollapsibleItem key={i} header={article.title}>
             <Card key={`a${i}`} header={

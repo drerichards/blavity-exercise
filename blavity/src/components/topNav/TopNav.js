@@ -5,6 +5,7 @@ import Collapse from './Collapse'
 import './TopNav.scss'
 
 const TopNav = props => {
+    //displays list of db saved articles
     return (
         <Navbar right className='card'>
             <SideNav

@@ -22,9 +22,14 @@ class App extends Component {
 
   async componentDidMount() {
     try {
+      //requires API key creation. did this req on front end because my server wasn't allowing it from the back
+      //the backend routing for this is still present
       const apiArticles = axios(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${NEWS_API_KEY}`)
+      //req from db collection docs
       const dbArticles = axios('http://localhost:5000/db/get_articles')
       const [api, db] = await Promise.all([apiArticles, dbArticles])
+
+      //spliced the incoming array in order to display the data in different layout formats
       const featureGroup = api.data.articles.splice(0, 5)
       const subGroup = api.data.articles.splice(0, 4)
       this.setState({
@@ -32,7 +37,7 @@ class App extends Component {
         subGridArticles: subGroup,
         miniGroup: api.data.articles,
         savedArticles: db.data,
-        articleTotal: db.data.length
+        articleTotal: db.data.length //keep track of number of saved articles
       })
     } catch (error) {
       console.log(error)
@@ -61,6 +66,8 @@ class App extends Component {
     } 
   }
 
+  //this does the same thing as the one above but the layout of the component is very diff
+  //previous comp not easily resuable
   renderArticlesHoriz(properties) {
     if (properties.length > 0) {
       return properties.map((article, i) => {
@@ -70,7 +77,8 @@ class App extends Component {
   }
 
  
-
+//errorboundary used to catch certain errors that will not cause an entire application crash
+//proptypes used to ensure correct data was being passed through components and sent error if not
   render() {
     const {featureArticles,
     subGridArticles,
