@@ -19,7 +19,7 @@
 <li>In the root folder, create an .env file with the variables:
 <ul>
 <li>NEWS_API_KEY</li>
-<li>DATABASE_URL (for mLab)</li>
+<li>DATABASE_URL=mongodb://drerichards:blavity123@ds149742.mlab.com:49742/blavity_news (for mLab)</li>
 <li>PORT</li>
 </ul>
 </li>
