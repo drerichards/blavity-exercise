@@ -18,9 +18,9 @@
 <li>You will need an API Key generated from New API</li>
 <li>In the root folder, create an .env file with the variables:
 <ul>
-<li>NEWS_API_KEY</li>
+<li>NEWS_API_KEY=???</li>
 <li>DATABASE_URL=mongodb://drerichards:blavity123@ds149742.mlab.com:49742/blavity_news (for mLab)</li>
-<li>PORT</li>
+<li>PORT=???</li>
 </ul>
 </li>
 <li>yarn or npm install in the terminal</li>
