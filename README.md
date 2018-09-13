@@ -26,7 +26,7 @@
 <li>yarn or npm install in the terminal</li>
 <li>Navigate into the <strong>blavity</strong> folder</li>
 <li>yarn or npm install in the terminal for this folder</li>
-<li>Move back to the root folder and start the app with <em><strong>yarn dev</strong></em> or <em><strong>npm run</strong></em></li>
+<li>Move back to the root folder and start the app with <em><strong>yarn dev</strong></em> or <em><strong>npm run dev</strong></em></li>
 </ul>
 <h1 id="functions">Functions</h1>
 <p>This coding exercise’s parameters were to:</p>
