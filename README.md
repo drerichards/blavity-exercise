@@ -15,7 +15,7 @@
 </ul>
 <h1 id="configuration">Configuration</h1>
 <ul>
-<li>You will need an API Key generated from New API</li>
+<li>You will need an API Key generated from News API (https://newsapi.org/)</li>
 <li>In the root folder, create an .env file with the variables:
 <ul>
 <li>NEWS_API_KEY=???</li>
