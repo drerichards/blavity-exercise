@@ -18,7 +18,6 @@
 <li>You will need an API Key generated from News API (https://newsapi.org/)</li>
 <li>In the root folder, create an .env file with the variables:
 <ul>
-<li>NEWS_API_KEY=???</li>
 <li>DATABASE_URL=mongodb://drerichards:blavity123@ds149742.mlab.com:49742/blavity_news (for mLab)</li>
 <li>PORT=???</li>
 </ul>
@@ -26,6 +25,7 @@
 <li>yarn or npm install in the terminal</li>
 <li>Navigate into the <strong>blavity</strong> folder</li>
 <li>yarn or npm install in the terminal for this folder</li>
+<li>Create a file called <b>config.js</b> and enter <b>exports.NEWS_API_KEY = '{API Key}'</b></li>
 <li>Move back to the root folder and start the app with <em><strong>yarn dev</strong></em> or <em><strong>npm run dev</strong></em></li>
 </ul>
 <h1 id="functions">Functions</h1>
